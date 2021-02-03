@@ -1,14 +1,10 @@
 import Image from "next/image";
 import Layout from "../components/Layout";
-import "tailwindcss/tailwind.css";
 
 const IndexPage = () => (
   <Layout title="Home | Next.js + TypeScript Example">
     <div className="flex flex-row justify-evenly ">
       <div className="flex flex-col">
-        <h1 className="font-sans text-6xl text-gray-900 ">
-          Hi, I'm Dr. Elizabeth Allan 👩‍🏫
-        </h1>
         <div className="flex flex-row justify-items-start">
           {/* <div className="self-start">
             <Image
