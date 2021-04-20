@@ -2,7 +2,7 @@
 import Layout from "../components/Layout";
 
 const IndexPage = () => (
-  <Layout title="Home | Next.js + TypeScript Example">
+  <Layout title="Elizabeth Allan, Ph.D.">
     <div className="flex flex-row justify-evenly ">
       <div className="flex flex-col">
         <div className="flex flex-row justify-items-start">
