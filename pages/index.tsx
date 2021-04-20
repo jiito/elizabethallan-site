@@ -1,4 +1,4 @@
-// import Image from "next/image";
+import Image from "next/image";
 import Layout from "../components/Layout";
 
 const IndexPage = () => (
@@ -6,7 +6,7 @@ const IndexPage = () => (
     <div className="flex flex-row justify-evenly ">
       <div className="flex flex-col">
         <div className="flex flex-row justify-items-start">
-          {/* <div className="self-start">
+          <div className="self-start">
             <Image
               src="/MAINE_crest_4c.png"
               alt="mainelogo"
@@ -21,7 +21,7 @@ const IndexPage = () => (
               width="64"
               height="64"
             />
-          </div> */}
+          </div>
           <div className="flex flex-col max-w-2xl mt-4 font-serif ">
             <p className="my-4 font-thin ">
               Elizabeth Allan is professor of higher education at the University
