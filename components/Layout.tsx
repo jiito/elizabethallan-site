@@ -1,5 +1,6 @@
 import React, { ReactNode } from "react";
 import Head from "next/head";
+import { Navigation } from "./Layout/Nav";
 
 type Props = {
   children?: ReactNode;
@@ -7,12 +8,13 @@ type Props = {
 };
 
 const Layout = ({ children, title = "This is the default title" }: Props) => (
-  <div className="flex items-center justify-center flex-col">
+  <div className="flex flex-col items-center justify-center">
     <Head>
       <title>{title}</title>
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
+    <Navigation pages={["About", "Stop Hazing"]} />
     <div className="flex items-center">{children}</div>
     <footer>
       <span className="text-gray-500">
