@@ -8,13 +8,15 @@ type Props = {
 };
 
 const Layout = ({ children, title = "This is the default title" }: Props) => (
-  <div className="flex flex-col items-center justify-center">
+  <div className="flex flex-col items-center justify-center max-w-4xl mx-auto">
     <Head>
       <title>{title}</title>
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
-    <Navigation pages={["About", "Stop Hazing"]} />
+    <Navigation
+      pages={["About", "Publications", "Stop Hazing", "Curriculum Vitae"]}
+    />
     <div className="flex items-center">{children}</div>
     <footer>
       <span className="text-gray-500">
